@@ -13,7 +13,6 @@ class ModelHandler:
     def load_model(self, model_path):
         with open(model_path, 'rb') as f:
             model_package = pickle.load(f)
-            # print(model_package)
 
         self.model = model_package['model']
         self.features = model_package['features']
