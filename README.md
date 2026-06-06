@@ -72,7 +72,7 @@ python main.py
 ## Запуск через Docker
 ```bash
 docker build -t credit-default-service .
-docker run -p 5000:5000 credit-default-service
+docker run -d -p 5000:5000 --name credit-default-service credit-default-service
 ```
 
 
